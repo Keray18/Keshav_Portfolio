@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth; 
+    font-family: 'Noto Sans', sans-serif;
 }
 body{
     background-color: white;
@@ -26,7 +28,7 @@ body{
 /* Whole Text of page-1 */
 
 .info{
-    font-family: 'Noto Sans', sans-serif;
+    
     padding-top: 15rem;
     padding-bottom: 10rem;
     margin: 1rem;
@@ -64,6 +66,7 @@ body{
     padding: 0.5rem;
     -webkit-text-fill-color: rgb(255, 255, 255);
     cursor: pointer;
+    text-decoration: none;
 }
 
 /* Animation */
@@ -97,6 +100,10 @@ body{
     right: 0;
     bottom: 0;
     z-index: -1;
+}
+
+#two {
+
 }
 /* Aspect Ratio Adjust */
 @media (min-aspect-ratio:16/9){
@@ -221,152 +228,192 @@ body{
     -webkit-text-fill-color: rgb(88, 106, 124);
     
 }
-.cont{
-    /* background-color: fuchsia; */
+
+.myself img{
+    width: 10rem;
+    border-radius: 5rem;
+    border: 1rem outset rgb(131, 214, 214) ;
+}
+.myself{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    margin-top: 3.5rem;
-    height: 15rem;
-    /* width: 100vw; */
-
+    margin: 1rem; 
+    /* padding: 1rem; */
+    /* position: relative; */
+    /* right: -10rem;
 }
-.cl{
-    /* background-color: forestgreen; */
-    padding-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 6rem; 
-    font-size: 1rem;
-    /* width: 100%; */
+#dev{
+    margin: 0.5rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
+    width: 23rem;
+    position: relative;
+    left: 2.5rem;
+}
+.download{
     
+    margin: 0.5rem;
+    border: 0.2rem outset rgb(131, 214, 214);
+    background-color: rgb(131, 214, 214);
+    border-radius: 0.8rem 0rem 0.8rem 0rem;
 }
-@media(max-width:740px){
-    .cl{
-        width: 11rem;
-        padding-left: 2.2rem;
-    }
-}
-/* #cup{
-    background-color: forestgreen;
-    font-size: 5rem;
-} */
-#i1{
-    height: 5rem;
-    width: 7rem;
-}
-#i2{
-    height: 5rem;
-    width: 6rem;
-}
-#i3{
-    height: 5rem;
-}
-/* #one{
-    background-color: crimson;
-
-}
-#two{
-    background-color: chartreuse;
-}
-#three{
-    background-color: coral;
-} */
-
-/* BOX-1 */
-.box1{
-    margin-left: -1.5rem;
-    margin-right: -5.555rem;
-    position: relative;
+#down{
     
+    text-decoration: none;
+    -webkit-text-fill-color: rgb(59, 59, 241);
 }
-#responsive{
+#down i{
     position: relative;
-    right: -1.5rem;
-    font-size: 1.5rem;
+    right: 0.8rem;
+    /* text-decoration-color: black; */
 }
-#r1{
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    /* border: 1px solid red; */
+    column-gap: 1rem;
+    margin: 1rem;
+}
+.I{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 31rem;
     position: relative;
-    top: 2.8rem;
-    right: -0.5rem;
-    font-size: 1rem;
-    width: 10rem;
+    /* border: 1px solid red; */
+    width: fit-content;
+    margin-right: 5rem;
+    /* left: 7rem; */
+    /* top: 5rem; */
+}
+.para{
+    /* font-size: 1.4rem; */
+}
+#contact-btn{
+    text-decoration: none;
+    /* -webkit-text-fill-color: rgb(74, 145, 145); */
 }
 
-/* BOX-2 */
-.box2{
-    margin-left: -2.3rem;
-    margin-right: -5.8rem;
-    position: relative;
-    
+.myself {
+    /* border: 1px solid rebeccapurple; */
+    width: fit-content;
+    margin-left: 15rem;
 }
-#data{
-    position: relative;
-    right: -2rem;
-    font-size: 1.5rem;
-    width: 0;
+.download {
+    /* border: 1px solid rebeccapurple; */
 }
-#d1{
-    position: relative;
-    top: 1.2rem;
-    right: -0.5rem;
-    font-size: 1rem;
-    width: 10rem;
+#down{
+    text-decoration: none;
 }
-/* Box-3 */
-.box3{
-    margin-left: -2.2rem;
-    margin-right: -5.9rem;
+.fa-file-arrow-down{
     position: relative;
-    
+    right: 0.5rem;
 }
-#compr{
-    position: relative;
-    right: -1.6rem;
-    width: 0;
-    font-size: 1.5rem;
-}
-#cp1{
+.download{
+    border: 0.4rem outset rgb(131, 214, 214);
+    background-color: rgb(131, 214, 214);
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0.2rem 0.2rem 2rem 1rem rgb(131, 214, 214);
     position: relative;
     top: 1rem;
-    right: -0.5rem;
-    font-size: 1rem;
+}
+
+
+
+@media(max-width: 1254px) {
+    .myself {
+        margin-left: 5rem;
+        width: fit-content;
+    }
+}
+
+@media(max-width: 589px) {
+    .myself {
+        margin-left: 3rem;
+        width: fit-content;
+    }
+}
+@media(max-width: 429px) {
+    .myself {
+        margin-left: 1.5rem;
+        width: fit-content;
+    }
+    .I {
+        margin-right: 1rem;
+    }
+}
+@media(max-width:500px) {
+    #page-3{
+        margin-top: 10rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.cont img{
     width: 10rem;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+    
 }
-
-/* Responsiveness of page-2 */
-@media(max-width:530px){
+.cont{
+    /* border: 1px solid firebrick; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.responsive{
+    /* border: 1px solid fuchsia; */
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.machine{
+    /* border: 1px solid forestgreen; */
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:  1rem;
+}
+.compa{
+    /* border: 1px solid aqua; */
+    margin: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+/* .page-2{
+    height: 1000rem;
+    background-color: firebrick;
+} */
+/* .page-2 NavBar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: inherit;
+    z-index: 99;
+    
+} */
+@media(max-width:660px){
     .cont{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 12rem;
-    }
-    #r1{
-        /* background-color: yellow; */
-        top: 0.8rem;
-    }
-    
-    #data{
-        top: 0.8rem;
-
-    }
-    
-    #compr{
-        top: 0.8;
-    }
-    .cl{
-        padding-left: 2.2rem;
-        margin: 1.5rem;
+        flex-wrap: wrap ;
     }
 }
-
-
-
-
-
-
-
-
-
-
